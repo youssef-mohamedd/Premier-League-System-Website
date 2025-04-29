@@ -1,14 +1,38 @@
-# PremierZone
+**PremierZone Backend **⚽
+A RESTful API for Premier League Player Statistics & Management
 
-PremierZone is a comprehensive project designed to scrape match statistics for over 700 players, manipulate and present the data dynamically, and predict match outcomes using machine learning. The project is divided into four main components: Backend, Frontend, Data Scraping, and Machine Learning.
+📌 Overview
+A Spring Boot backend system for managing Premier League player data, featuring:
 
-<img width="1407" alt="Screenshot 2024-06-22 at 11 29 13 PM" src="https://github.com/Erik-Cupsa/PLWebsite/assets/86483911/022e82ae-5190-49a4-a15d-87fc8227a579">
+CRUD operations for 700+ players
+
+Dynamic filtering (by team, position, nationality, etc.)
+
+PostgreSQL database integration
+
+Clean architecture with controllers, services, and repositories
+
+**🛠 Technologies**
+Category	Tech Stack
+Backend	Java 17, Spring Boot 3
+Database	PostgreSQL
+API Docs	OpenAPI (Swagger) (optional)
+Build Tool	Maven
+🚀 Features
+1. Player Management
+✅ Add new players
+
+✅ Update existing player stats
+
+✅ Delete players
+
+✅ Filter players by:
 
 
 
-## Features
-
-data scraped of match statistics for 700+ players
-- **Backend**: Dynamic manipulation and presentation of the scraped data through a Spring Boot application.
-- **Database**: Real-time data manipulation within a Postgres database using SQL queries.
-
+**2. API Endpoints**
+HTTP Method	Endpoint	Description
+GET	/api/v1/player	Get all players (with filters)
+POST	/api/v1/player	Add a new player
+PUT	/api/v1/player	Update player stats
+DELETE	/api/v1/player/{name}	Delete a player by name
