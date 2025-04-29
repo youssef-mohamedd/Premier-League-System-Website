@@ -1,38 +1,58 @@
-****PremierZone Backend **⚽**
-A RESTful API for Premier League Player Statistics & Management
+# ⚽ PremierZone Backend
 
-📌 Overview
-A Spring Boot backend system for managing Premier League player data, featuring:
+A robust and scalable RESTful API built with **Spring Boot** for managing **Premier League** player data. Supports dynamic filtering, full CRUD operations, and PostgreSQL integration.
 
-CRUD operations for 700+ players
+---
 
-Dynamic filtering (by team, position, nationality, etc.)
+## 📌 Overview
 
-PostgreSQL database integration
+This backend service is designed to manage data for over **700+ football players**, offering:
 
-Clean architecture with controllers, services, and repositories
+- ✅ Full CRUD operations
+- ✅ Dynamic filtering by:
+  - Team
+  - Position
+  - Nationality
+  - Name
+- ✅ Clean layered architecture (`Controller → Service → Repository`)
+- ✅ Integrated with **PostgreSQL**
+- ✅ Ready for Swagger/OpenAPI (optional)
 
-**🛠 Technologies**
-Category	Tech Stack
-Backend	Java 17, Spring Boot 3
-Database	PostgreSQL
-API Docs	OpenAPI (Swagger) (optional)
-Build Tool	Maven
-🚀 Features
-1. Player Management
-✅ Add new players
+---
 
-✅ Update existing player stats
+## 🛠 Tech Stack
 
-✅ Delete players
+| Category      | Technology                  |
+|---------------|-----------------------------|
+| Language      | Java 17                     |
+| Framework     | Spring Boot 3               |
+| Database      | PostgreSQL                  |
+| Build Tool    | Maven                       |
 
-✅ Filter players by:
+---
 
+## 🚀 Features
 
+### 🎯 Player Management
 
-**2. API Endpoints**
-HTTP Method	Endpoint	Description
-GET	/api/v1/player	Get all players (with filters)
-POST	/api/v1/player	Add a new player
-PUT	/api/v1/player	Update player stats
-DELETE	/api/v1/player/{name}	Delete a player by name
+- Add new players
+- Update existing player data
+- Delete players
+- Filter players by:
+  - Team
+  - Position
+  - Nationality
+  - Name
+  - Team & Position combined
+
+---
+
+## 📡 API Endpoints
+
+| HTTP Method | Endpoint                     | Description                       |
+|-------------|------------------------------|-----------------------------------|
+| `GET`       | `/api/v1/player`             | Get all players (with filters)    |
+| `POST`      | `/api/v1/player`             | Add a new player                  |
+| `PUT`       | `/api/v1/player`             | Update a player's information     |
+| `DELETE`    | `/api/v1/player/{name}`      | Delete a player by name           |
+
