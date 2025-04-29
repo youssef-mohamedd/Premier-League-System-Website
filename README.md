@@ -16,7 +16,6 @@ This backend service is designed to manage data for over **700+ football players
   - Name
 - ✅ Clean layered architecture (`Controller → Service → Repository`)
 - ✅ Integrated with **PostgreSQL**
-- ✅ Ready for Swagger/OpenAPI (optional)
 
 ---
 
